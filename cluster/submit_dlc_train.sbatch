@@ -18,7 +18,7 @@ mkdir -p "${MPLCONFIGDIR}"
 
 cd /Users/kp/Documents/Playground
 
-DLC_CONFIG="/Users/kp/Documents/Playground/lizard_6pts_bootstrap50-kp-2026-03-11/config.yaml"
+DLC_CONFIG="$HOME/datas/lizard_6pts_bootstrap50-kp-2026-03-11/config.yaml" # replace this file path with user's corresponding directory
 
 python /Users/kp/Documents/Playground/scripts/train_dlc.py \
   --dlc-config "${DLC_CONFIG}" \

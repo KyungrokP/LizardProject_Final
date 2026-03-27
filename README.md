@@ -5,10 +5,11 @@ The repo consists of two main structures which is divided based on the tracking 
 ## Local Workflow (Labelling, Quick Runs & CPU based)
 First, we introduce the local workflow which highlights the usage of hybird motion tracking in a local server. 
 1. Manual labelling using DLC interface
-   Manulal labelling job is necessary before traning DLC, utilizing DLC interface and details of the program can be found at https://deeplabcut.github.io/DeepLabCut/README.html
+   : Manulal labelling job is necessary before traning DLC, utilizing DLC interface and details of the program can be found at https://deeplabcut.github.io/DeepLabCut/README.html
 2. DLC Training
    
-3. Multiprocessing (Parallel Computing)  
+3. Multiprocessing (Parallel Computing)
+   For an efficient job running, we use multiprocessing (specifically queue) by separating jobs into 4. The methods and procedures are documented here: 
 
 ## Cluster Workflow (GPU Training & Large Scale Inference)
 1. DLC Training
@@ -23,7 +24,7 @@ The main files (scripts, videos and datas) to run DLC training on cluster is lis
 
   After transferring, we can submit the slurm job to complete training job.
 
-2. Multiprocessing (Parallel Computing) for chunked videos.
+2. Multiprocessing (Parallel Computing)
   The procedure and methods are same as local workflow, instead we use 2 GPU's for prediction of DLC (related command: "deeplabcut.analyze_videos(...)) and TAPNext tracking.
 
 

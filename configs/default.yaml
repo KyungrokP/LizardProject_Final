@@ -1,0 +1,13 @@
+keypoint_names:
+  - nose
+  - left_ear
+  - right_ear
+  - tail_base
+tapnext_window_seconds: 5.0
+dlc_supervision_stride_seconds: 3.0
+tapnext_confidence_floor: 0.45
+dlc_confidence_floor: 0.7
+dlc_force_replace: false
+dlc_max_jump_pixels: 80.0
+max_query_age_seconds: 6.0
+fuse_tolerance_seconds: 0.1
